@@ -10,7 +10,7 @@ public Attendee(String firstName, String lastName, int company, String allergies
 	aFirst = firstName;
 	aLast = lastName;
 	aCompany = company;
-	if (allergies) {
+	if (!allergies.equals(null)) {
 		aAllergies = allergies;
 	}
 	aID = attendeeID;
