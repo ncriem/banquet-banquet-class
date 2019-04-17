@@ -7,12 +7,16 @@ public class Banquet {
     ArrayList<String> companies = new ArrayList<>(Arrays.asList("WalMart","Kroger","Amazon","Lowes","BestWestern","KMart","Fusian","Heinz",
             "Gucci","Prada","Nike","Dodge","Maserati","Razor","AMD","Razer"));
     ArrayList<Attendee> attendees = new ArrayList<>();
-    ArrayList<int> companiescount = new ArrayList<>(companies.size());
+    ArrayList<Integer> companiescount = new ArrayList<>(companies.size());
     int aIDcounter = 0;
+
+    public void addCompany(String company){
+        companies.add(company);
+    }
 
     public void register() {
         if(aIDcounter<100){
-            Scanner scan = new Scanner();
+            Scanner scan = new Scanner(System.in);
             int company = scan.nextInt();
             if(companiescount.get(company)<10) {
                 String first = scan.next();
