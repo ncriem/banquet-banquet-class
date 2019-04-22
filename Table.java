@@ -30,7 +30,7 @@ public class Table {
         }
         return true;
     }
-
+/*
     public void populate(int josh[][], Attendee guests[][]) { //josh array shows comapny sizes, guests array has all attendees
         int max = 0;
         for (int i = 0; i < numCompanies; i++) {
@@ -47,4 +47,13 @@ public class Table {
         }
     }
 }
+*/
+    
+public void populate(int josh[][], Attendee guests[][]) { //josh array shows comapny sizes, guests array has all attendees
 
+//sort companies from biggest to smallest <--Manav
+    
+//populate companies with size=10 first <--Chase
+
+//work from big to small when populating the other companies <--Nathan
+}
