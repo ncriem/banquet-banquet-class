@@ -52,8 +52,18 @@ public class Table {
 public void populate(int josh[][], Attendee guests[][]) { //josh array shows comapny sizes, guests array has all attendees
 
 //sort companies from biggest to smallest <--Manav
-    
+  for(int company: companyArrayList{  
 //populate companies with size=10 first <--Chase
 
 //work from big to small when populating the other companies <--Nathan
-}
+      if(companySize<tablePeople){//if the company size is less than the number of seats at a table
+      for(attendee person: guests){
+          if(attendee.getCompany==company){
+              for(String seat: tables){
+                  if(seat==null)seat=attendee.returnName();
+              }//for
+          }//if
+      }//for
+  }//if
+  }//big for
+}//method
