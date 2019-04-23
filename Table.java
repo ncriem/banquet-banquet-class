@@ -5,7 +5,7 @@ public class Table {
     int tablePeople = 10;
     int numCompanies=16;
 
-    Attendee tables[][] = new ArrayList<Attendee>[numTable][tablePeople];
+    attendee tables[][] = new attendee[numTable][tablePeople];
 
     public void printTable(int tableNum) {
         for (int i = 0; i < tablePeople; i++) {
@@ -49,7 +49,7 @@ public class Table {
 }
 */
     
-public void populate(int josh[][], Attendee guests[][]) { //josh array shows comapny sizes, guests array has all attendees
+public void populate(int josh[][], attendee guests[][], attendee tables[][]) { //josh array shows comapny sizes, guests array has all attendees
 
 //sort companies from biggest to smallest <--Manav
   for(int company: companyArrayList{  
@@ -59,11 +59,11 @@ public void populate(int josh[][], Attendee guests[][]) { //josh array shows com
       if(companySize<tablePeople){//if the company size is less than the number of seats at a table
       for(attendee person: guests){
           if(attendee.getCompany==company){
-              for(String seat: tables){
-                  if(seat==null)seat=attendee.returnName();
-              }//for
-          }//if
-      }//for
-  }//if
+              for(attendee seat: tables){
+                  if(seat==null)seat=person;
+              }
+          }
+      }
+      }
   }//big for
 }//method
